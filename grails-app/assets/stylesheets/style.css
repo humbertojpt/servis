@@ -1,0 +1,82 @@
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav #navquiru a{
+  color: #00e5ff;
+}
+
+#navquiru #user-name{
+  color: white;
+}
+
+#logo-container {
+  font-size: 1.5rem;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+#user-name{
+  color: #0D47A1;
+}
+
+.inicio{
+  padding: 32px 48px 0px 48px;
+  border: 1px solid #EEE;
+}
+
+/* PARALLAX CSS*/
+
+.parallax {
+  position: static !important;
+}
+
+#productos .card img{
+  height: 190px;
+}
+
+div #clientes.section.scrollspy{
+  padding-bottom: 0px !important;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+/* footer */
+
+
+footer.page-footer {
+  margin: 0;
+}
+
+@media only screen and (max-width : 510px) {
+  nav .brand-logo{
+    font-size: 1.5em !important;
+  } 
+}
+
+.tituloInicio{
+  margin-top: 2em;
+}
+
+/* company */
+
+.imagecompany img{
+  width: 100%;
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
