@@ -15,10 +15,20 @@ class UserServiceSpec extends Specification {
     private Long setupData() {
         // TODO: Populate valid domain instances and return a valid ID
         //new User(...).save(flush: true, failOnError: true)
-        //new User(...).save(flush: true, failOnError: true)
         //User user = new User(...).save(flush: true, failOnError: true)
         //new User(...).save(flush: true, failOnError: true)
         //new User(...).save(flush: true, failOnError: true)
+        User user = new User()
+        user.firstName = "humberto"
+        user.lastName = "peña"
+        user.username = "humbe"
+        user.passwordHashed = "jLIjfQZ5yojbZGTqxg2pY0VROWQ="
+        user.mail = "humbe@gmail.com"
+        user.position = "inge"
+        user.identification = "11111"
+        user.company = "servis"
+        user.save(flush: true, failOnError: true)
+
         assert false, "TODO: Provide a setupData() implementation for this generated test suite"
         //user.id
     }

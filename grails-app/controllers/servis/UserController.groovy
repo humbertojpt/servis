@@ -57,6 +57,14 @@ class UserController {
         }
     }
 
+    def muestra() {
+        def cedula
+        def u = User.executeQuery("select lastName from User where identification = '"+cedula+"' ")
+        def usu = u[0]
+        render(view:"muestra", model:[userID:usu])
+        println "Usuario = ${usu}"
+    }
+
     def logout = {
         session.invalidate()
         redirect url : "/"

@@ -33,5 +33,10 @@
         </div>
     </section>
 
+    <g:form action="muestra">
+        Cedula: <g:field type="text" name="cedula"/><br>
+        <g:submitButton name="submit" value="Enviar datos"/>
+    </g:form>
+
     </body>
 </html>

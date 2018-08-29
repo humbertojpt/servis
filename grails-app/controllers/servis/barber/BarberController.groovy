@@ -2,5 +2,7 @@ package servis.barber
 
 class BarberController {
 
-    def barber() { }
+    def barber() {
+        render view: "barber"
+    }
 }
