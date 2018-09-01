@@ -34,16 +34,17 @@
                             <f:field bean="user" property="identification"/>
                             <f:field bean="user" property="firstName"/>
                             <f:field bean="user" property="lastName"/>
-                            <h4>Inicio de Sesión</h4>
-                            <f:field bean="user" property="username"/>
-                            <f:field property="passwordHashed">
-                                <g:passwordField name="passwordHashed"/>
-                            </f:field>
-                        </div>
-                        <div class="col s12 m4">
                             <f:field bean="user" property="mail"/>
                             <f:field bean="user" property="position"/>
                             <f:field bean="user" property="company"/>
+
+                        </div>
+                        <div class="col s12 m4">
+                            <h4>Inicio de Sesión</h4>
+                            <f:field bean="user" property="username"/>
+                            <f:field property="password">
+                                <g:passwordField name="password"/>
+                            </f:field>
                             <fieldset class="waves-effect waves-light btn">
                                 <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                             </fieldset>

@@ -21,7 +21,7 @@ class UserController {
             } else {
                 // validate/save ok, store user in session, redirect to homepage
                 session.user = u
-                redirect(controller:'navegador')
+                redirect(controller:'user')
             }
         }// else if (session.user) {
         // don't allow registration while user is logged in
@@ -32,7 +32,7 @@ class UserController {
     def login = {
         if (request.method == 'POST') {
             def passwordHashed = params.password.encodeAsPassword()
-            def u = User.findByUsernameAndPasswordHashed(params.username, passwordHashed)
+            def u = User.findByUsernameAndPassword(params.username, params.password)
             if (u) {
                 // username and password match -> log in
                 session.user = u

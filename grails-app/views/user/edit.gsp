@@ -33,7 +33,7 @@
                         <f:field bean="user" property="lastName"/>
                         <h4>Inicio de Sesión</h4>
                         <f:field bean="user" property="username"/>
-                        <f:field bean="user" property="passwordHashed"/>
+                        <f:field bean="user" property="password"/>
                     </div>
                     <div class="col s12 m4">
                         <f:field bean="user" property="mail"/>

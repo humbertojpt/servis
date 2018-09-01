@@ -8,8 +8,8 @@ nav #navquiru a{
   color: #00e5ff;
 }
 
-#navquiru #user-name{
-  color: white;
+#navquiru #user-name, .logout a{
+  color: white; !important;
 }
 
 #logo-container {
@@ -24,7 +24,7 @@ p {
 }
 
 #user-name{
-  color: #0D47A1;
+  color: #00e5ff;
 }
 
 .inicio{
