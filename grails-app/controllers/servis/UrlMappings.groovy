@@ -10,6 +10,7 @@ class UrlMappings {
         }
         "/"(view:"/mainbody")
         "/quiru"(controller: "navegador", view: "/navegador/quiru")
+        "/client"(controller: "client", view: "/client/index")
         "/barber"(controller: "barber", view: "/barber/barber")
         "/empresa"(view:"/empresa")
         "/inicio"(view:"/user/inicio")

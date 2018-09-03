@@ -11,16 +11,16 @@
         <nav role="navigation">
             <div class="nav-wrapper container">
                 <ul id="navquiru" class="right hide-on-med-and-down">
-                    <li><a href="#">Citas</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="${createLink(uri: '#')}">Laser</a></li>
-                    <li><a href="#contact">Dermo</a></li>
-                    <li><a href="${createLink(uri: '#')}">Botox</a></li>
-                    <li><a href="#contact">BotoxN</a></li>
-                    <li><a href="${createLink(uri: '#')}">Estadisticas</a></li>
                     <g:if test="${session?.user}">
-                        <li id="user-name">${session?.user?.firstName} ${session?.user?.lastName} |</li>
-                        <li><g:link controller="user" action="logout">Logout</g:link></li>
+                    <li><a href="#">Citas</a></li>
+                    <li><a href="/client">Clientes</a></li>
+                    <li><a href="${createLink(uri: '#')}">Laser</a></li>
+                    <li><a href="#">Dermo</a></li>
+                    <li><a href="${createLink(uri: '#')}">Botox</a></li>
+                    <li><a href="#">BotoxN</a></li>
+                    <li><a href="${createLink(uri: '#')}">Estadisticas</a></li>
+                    <li id="user-name">${session?.user?.firstName} ${session?.user?.lastName} |</li>
+                    <li><g:link controller="user" action="logout">Logout</g:link></li>
                     </g:if>
                     <g:else>
                         <li><a href="${createLink(uri: '/inicio')}">{{inicio}}</a></li>
