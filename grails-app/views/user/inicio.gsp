@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta name="layout" content="main" />
+  <meta name="layout" content="footini" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 </head>
 
 <body>
-  <main>
 <g:if test="${session?.user}">
 </g:if>
 <g:else>
-  <div class="container">
       <div class='row'>
           <div class='col s12 center tituloInicio'>
               <h5 class="indigo-text">Please, login into your account</h5>
           </div>
       </div>
       <div class="row">
-          <div class="z-depth-1 grey lighten-4 inicio col s6 offset-s3">
+          <div class="z-depth-1 grey lighten-4 col s12 m4 offset-m4">
               <g:form controller="user" action="login">
                   <div class='row'>
                       <div class='input-field col s8 offset-s2'>
@@ -35,8 +33,8 @@
                       </div>
                   </div>
                   <div class='row'>
-                      <div class="col s8 offset-s2">
-                          <g:submitButton class="button waves-effect waves-light btn " name="submitButton" value="Login" />
+                      <div class="col s12 center">
+                          <g:submitButton class="button waves-effect waves-light btn btnini" name="submitButton" value="Login" />
                       </div>
 
                   </div>
@@ -49,8 +47,6 @@
           </div>
       </div>
 
-  </div>
 </g:else>
-</main>
 </body>
 </html>

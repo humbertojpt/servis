@@ -6,6 +6,7 @@ import static org.springframework.http.HttpStatus.*
 class UserController {
 
     UserService userService
+    public static username
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -32,6 +33,7 @@ class UserController {
     def login = {
         if (request.method == 'POST') {
             def passwordHashed = params.password.encodeAsPassword()
+            username = params.username
             def u = User.findByUsernameAndPassword(params.username, params.password)
             if (u) {
                 // username and password match -> log in

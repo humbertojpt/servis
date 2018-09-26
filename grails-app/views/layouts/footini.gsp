@@ -50,7 +50,7 @@
 
     <g:layoutBody/>
 
-    <footer class="page-footer teal">
+    <footer class="page-footer teal footsmall">
         <div class="container hide-on-small-only">
             <div class="row">
                 <div class="col l4 m4 s12">

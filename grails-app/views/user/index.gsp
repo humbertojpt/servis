@@ -9,6 +9,7 @@
     <nav>
         <div class="nav-wrapper">
             <ul id="nav">
+                <li><g:link class="waves-effect waves-light btn" url="/user" ><g:message args="Home" /></g:link></li>
                 <li><g:link class="waves-effect waves-light btn" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
                 <g:if test="${session?.user}">
                     <li id="user-name">${session?.user?.firstName} ${session?.user?.lastName} |</li>
@@ -27,7 +28,9 @@
                 <g:if test="${flash.message}">
                     <div class="message" role="status">${flash.message}</div>
                 </g:if>
+
                 <f:table collection="${userList}" />
+
             </div>
         </div>
     </section>

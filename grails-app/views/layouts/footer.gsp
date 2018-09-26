@@ -22,7 +22,7 @@
     <g:layoutBody/>
 
     <footer class="page-footer teal">
-        <div class="container">
+        <div class="container hide-on-small-only">
             <div class="row">
                 <div class="col l4 m4 s12">
                     <i class="small material-icons">navigation</i>

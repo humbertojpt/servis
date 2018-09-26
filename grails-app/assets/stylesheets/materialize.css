@@ -2950,7 +2950,7 @@ ul.staggered-list li {
 
 footer.page-footer {
   margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: #ee6e73;
 }
 
@@ -3402,6 +3402,7 @@ input[type=range] + .thumb {
 
 /* This is needed for some mobile phones to display the Google Icon font properly */
 .material-icons {
+  margin: 5px;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
      -moz-font-feature-settings: 'liga';
@@ -3451,7 +3452,7 @@ input[type=range] + .thumb {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .row:after {
@@ -4658,7 +4659,7 @@ small {
 }
 
 .card .card-content {
-  padding: 20px;
+  padding: 10px;
   border-radius: 0 0 2px 2px;
 }
 
@@ -5404,7 +5405,7 @@ button.btn-floating {
 
 .collapsible-body p {
   margin: 0;
-  padding: 2rem;
+  padding: 1em;
 }
 
 .side-nav .collapsible,
@@ -5899,8 +5900,8 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field {
+  margin-top: 2em;
   position: relative;
-  margin-top: 1rem;
 }
 
 .input-field.col label {

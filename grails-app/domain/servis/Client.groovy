@@ -15,12 +15,13 @@ class Client {
     String servicompany
 
     // transients
-    static transients = ['servicompany']
+    //static transients = ['servicompany']
 
     static constraints = {
         clientid blank: false , unique: true
         clname blank: false
         mail blank: false , email: true
         phone blank: false
+        //servicompany blank: true
     }
 }

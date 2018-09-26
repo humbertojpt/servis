@@ -8,10 +8,18 @@ class ClientController {
     ClientService clientService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    def comp
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond clientService.list(params), model:[clientCount: clientService.count()]
+        def username = UserController.username
+        def u = User.executeQuery("select company from User where username = '"+username+"' ")
+        comp = u[0]
+        //render(view:"muestra", model:[userID:usu])
+        println "company = ${comp}"
+            params.max = Math.min(max ?: 10, 100)
+            respond clientService.list(params), model:[clientCount: clientService.count()]
+
+
     }
 
     def show(Long id) {
@@ -19,6 +27,7 @@ class ClientController {
     }
 
     def create() {
+        params.servicompany = comp
         respond new Client(params)
     }
 

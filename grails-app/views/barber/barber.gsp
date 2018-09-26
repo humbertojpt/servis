@@ -11,7 +11,8 @@
             <div class="nav-wrapper container">
                 <ul id="navquiru" class="right hide-on-med-and-down">
                     <li><a href="#">Citas</a></li>
-                    <li><a href="#">Clientes</a></li>
+                    <li><a href="/client">Clientes</a></li>
+                    <li><a href="/pventa">Punto de venta</a></li>
                     <li><a href="${createLink(uri: '#')}">Estadisticas</a></li>
                     <g:if test="${session?.user}">
                         <li id="user-name">${session?.user?.firstName} ${session?.user?.lastName} |</li>

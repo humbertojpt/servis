@@ -43,6 +43,7 @@
                             <f:field bean="client" property="mail"/>
                             <f:field bean="client" property="birthday"/>
                             <f:field bean="client" property="company"/>
+                            <f:field bean="client" property="servicompany"/>
                         </div>
                     </fieldset>
                 </div>

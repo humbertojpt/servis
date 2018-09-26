@@ -93,21 +93,21 @@ dataSource:
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    username: b2f16ff136d26e
-    password: 7e525a29
+    username: root
+    password: hpena10
 
 environments:
     development:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://us-cdbr-iron-east-01.cleardb.net/heroku_cbd0b2ac5df5c62
+            url: jdbc:mysql://localhost/servis
 
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://us-cdbr-iron-east-01.cleardb.net/heroku_cbd0b2ac5df5c62
+            url: jdbc:mysql://localhost/servis
 
     production:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://us-cdbr-iron-east-01.cleardb.net/heroku_cbd0b2ac5df5c62
+            url: jdbc:mysql://localhost/servis
